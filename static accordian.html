@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STATIC ACCORDIAN</title>
+    <style>
+        body {
+           background-image: url(https://tse3.mm.bing.net/th?id=OIP.zjs44WsMo_YlomRGkNIBvAHaEK&pid=Api&P=0&h=180);
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 100vh;
+        }
+
+        .heading {
+            color:indigo;
+            font-size: 3rem;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 1px 1px 1px;
+        }
+
+        .questions-section {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(4, 100px);
+            gap: 20px;
+        }
+
+        .question {
+             padding: 10px;
+            font-size: 200px;
+            text-shadow: 1px 1px;
+            
+        }
+
+        .question-text {
+            color:indianred;
+            font-size: 2rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .plus-icon {
+            font-size: 3rem;
+        }
+        .answer{
+            display: none;
+            background-color:lightblue;
+            padding: 10px;
+            box-shadow: 5px 5px darkcyan;
+
+        }
+        .answer p{
+            color:#fff;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .question:hover + .answer{
+            display: block;
+        }
+        p:hover{
+            color:powderblue;
+            text-shadow: 2px 2px;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: darkolivegreen;
+            margin-left: 40%;
+        }
+        button:hover{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="faq-container">
+        <div class="faq-heading">
+            <h1 class="heading">ABOUT COMPUTER LANGUAGES</h1>
+        </div>
+        <div class="questions-section">
+            <div class="question">
+                <div class="question-text">
+                    <span>ABOUT HTML ?</span>
+                    <span class="plus-icon">see here</span>
+                </div>
+            </div>
+            <div class="answer">
+                <p>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.o-wNqCyhGc3XpFMfCCFpigHaEK&pid=Api&P=0&h=180" width="100px" height="30px">
+                    An HTML element is a type of HTML (HyperText Markup Language) document component, one of several types of HTML nodes (there are also text nodes, comment nodes and others). The first used version of HTML was written by Tim Berners-Lee in 1993 and there have since been many versions of HTML. The current de facto standard is governed by the industry group WHATWG and is known as the HTML Living Standard. 
+                </p>
+            </div>
+            <div class="questions-section">
+                <div class="question">
+                    <div class="question-text">
+                        <span>ABOUT CSS ?</span>
+                        <span class="plus-icon">+</span>
+                    </div>
+                </div>
+                <div class="answer">
+                    <p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.YDpOnAUsB6i7kcn487WxMgAAAA&pid=Api&P=0&h=180" width="100px" height="50px">
+                        CSS stands for Cascading Style Sheet, it is a style sheet language used to shape the HTML elements that will be displayed in the browsers as a web-page. Without using CSS, the website which has been created by using HTML, will look dull.
+                    </p>
+                </div>
+                <div class="questions-section">
+                    <div class="question">
+                        <div class="question-text">
+                            <span>ABOUT BOOTSTRAP ?</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.2lPcNBjKmc6P7DhGJ02cuAHaHa&pid=Api&P=0&h=180" width="100px" height="30px">
+                            Bootstrap is a free, open source front-end development framework for the creation of websites and web apps.  Bootstrap provides a collection of syntax for template designs.
+
+As a framework, Bootstrap includes the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system. The Bootstrap framework is built on Hypertext Markup Language (HTML), cascading style sheets (CSS) and JavaScript. Web developers using Bootstrap can build websites much faster without spending time worrying about basic commands and functions.
+                        </p>
+                    </div>
+                    <button>seemore</button>
